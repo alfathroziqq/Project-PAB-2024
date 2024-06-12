@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/nav_prosedur"
+        android:icon="@drawable/iteration"
+        android:title="@string/menu_prosedur" />
+    <item
+        android:id="@+id/nav_daftarkerjasama"
+        android:icon="@drawable/clipboard"
+        android:title="@string/menu_daftar" />
+    <item
+        android:id="@+id/nav_grafik"
+        android:icon="@drawable/diagram"
+        android:title="@string/menu_grafik" />
+</menu>

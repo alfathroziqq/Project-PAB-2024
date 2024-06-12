@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">ProjectPAB2024</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--  FRAGMENT HOME  -->
+    <string name="title_home">Kerjasama</string>
+    <string name="description_home">Home Photo</string>
+    <string name="description_indexhome">Kami menyediakan rekapitulasi perjanjian dengan rincian tujuan, pencapaian, dan dampak positifnya. Melalui portal ini, Anda dapat mengakses informasi mendalam tentang kerjasama kami, kontribusinya terhadap pertumbuhan dan inovasi, serta peluang kolaborasi di masa depan.</string>
+
+    
+    <!--  FRAGMENT PROSEDUR  -->
+    <string name="title_prosedur">Prosedur Pengajuan dan Format Naskah Kerjasama</string>
+    <string name="description_prosedur">Prosedur Photo</string>
+    <string name="description_prosedur1">Prosedur baku penyelenggara kerja sama di lingkungan UNS diatur dalam Peraturan Rektor No. 518/UN27/HK/2016</string>
+    <string name="unduh_document">unduh disini</string>
+    <string name="description_prosedur2">Adapun prosedur pengurusan dokumen kerja sama UNS dapat dilihat dibawah ini</string>
+
+    <string name="title_dialog">Prosedur Kerja Sama</string>
+    <string name="label_no">No</string>
+    <string name="label_title">Title</string>
+    <string name="label_desc">Description</string>
+
+    <string-array name="procedure_titles">
+        <item>Ide/Inisiasi Kerjasama</item>
+        <item>Menyusun Draft Dokumen Kerjasama</item>
+        <item>Cek Kelengkapan</item>
+        <item>Diskusi Hasil Review (jika diperlukan)</item>
+        <item>Telaah Dokumen</item>
+        <item>Diskusi Hasil Telaah dari DKS atau triparit</item>
+        <item>Penandatanganan</item>
+    </string-array>
+
+    <string-array name="procedure_descriptions">
+        <item>Dapat berasal dari civitas UNS atau pihak eksternal (mitra)</item>
+        <item>Dilakukan oleh inisiator bersama pihak mitra, menggunakan template dari kerjasama @uns.ac.id</item>
+        <item>Draft naskah dikirimkan ke kerjasama @uns.ac.id (Dengan surat pengantar dari Ka. Dept tertuju ke Dekan)</item>
+        <item>Unit kerjasama UNS akan melengkapi bagian yang kosong dan mengontak inisiator untuk mendiskusikan saran perubahan (jika ada)</item>
+        <item>Draft akan dikirimkan oleh UNS ke Direktorat Kerja Sama (DKS). DKS akan Melakukan telaah dokumen, yang juga akan direview oleh BLLH dan IO (untuk kerjasama internasional)</item>
+        <item>Hasil telaah akan disampaikan ke inisiator via UNS. Perubahan akan ditelaah kembali hingga final dan disetujui semua pihak</item>
+        <item>Penandatanganan bisa dilakukan secara desk to desk (pihak UNS terlebih dahulu), atau dengan acara penandatanganan</item>
+    </string-array>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_daftar">Daftar Kerjasama</string>
+    <string name="menu_prosedur">Prosedur</string>
+    <string name="menu_grafik">Grafik</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

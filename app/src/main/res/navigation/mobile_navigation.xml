@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_prosedur"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.prosedur.ProsedurFragment"
+        android:label="@string/menu_prosedur"
+        tools:layout="@layout/fragment_prosedur" />
+
+    <fragment
+        android:id="@+id/nav_daftarkerjasama"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.daftarkerjasama.DaftarFragment"
+        android:label="@string/menu_daftar"
+        tools:layout="@layout/fragment_daftar" />
+
+    <fragment
+        android:id="@+id/nav_grafik"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.grafik.GrafikFragment"
+        android:label="@string/menu_grafik"
+        tools:layout="@layout/fragment_grafik" />
+</navigation>
