@@ -28,4 +28,10 @@
         android:name="com.l0122012.alfathroziq.projectpab2024.ui.grafik.GrafikFragment"
         android:label="@string/menu_grafik"
         tools:layout="@layout/fragment_grafik" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

@@ -47,6 +47,82 @@
     </string-array>
 
 
+    <!--  FRAGMENT DAFTAR KERJASAMA  -->
+    <string name="header_data_1">Kerjasama ASEAN</string>
+
+    <string-array name="table_data_1">
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
+        <item>1;Mitra ASEAN;#</item>
+        <item>2;Mitra ASEAN Kerjasama dengan UNS;#</item>
+        <item>3;Mitra ASEAN;#</item>
+        <item>4;Mitra ASEAN;#</item>
+        <item>5;Mitra ASEAN;#</item>
+        <item>6;Mitra ASEAN;#</item>
+        <item>7;Mitra ASEAN;#</item>
+        <item>8;Mitra ASEAN;#</item>
+        <item>9;Mitra ASEAN;#</item>
+        <item>10;Mitra ASEAN;#</item>
+        <item>11;Mitra ASEAN;#</item>
+        <item>12;Mitra ASEAN;#</item>
+        <item>13;Mitra ASEAN;#</item>
+        <item>14;Mitra ASEAN;#</item>
+        <item>15;Mitra ASEAN Kerjasama;#</item>
+    </string-array>
+
+    <string-array name="table_data_2">
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
+        <item>1;Mitra Asia;#</item>
+        <item>2;Mitra Asia;#</item>
+        <item>3;Mitra Asia;#</item>
+        <item>4;Mitra Asia;#</item>
+        <item>5;Mitra Asia;#</item>
+    </string-array>
+
+    <string-array name="table_data_3">
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
+        <item>1;Mitra Eropa;#</item>
+        <item>2;Mitra Eropa;#</item>
+        <item>3;Mitra Eropa;#</item>
+        <item>4;Mitra Eropa;#</item>
+        <item>5;Mitra Eropa;#</item>
+    </string-array>
+
+    <string-array name="table_data_4">
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
+        <item>1;Mitra Afrika;#</item>
+        <item>2;Mitra Afrika;#</item>
+        <item>3;Mitra Afrika;#</item>
+        <item>4;Mitra Afrika;#</item>
+        <item>5;Mitra Afrika;#</item>
+    </string-array>
+
+    <string-array name="table_data_5">
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
+        <item>1;Mitra Amerika;#</item>
+        <item>2;Mitra Amerika;#</item>
+        <item>3;Mitra Amerika;#</item>
+        <item>4;Mitra Amerika;#</item>
+        <item>5;Mitra Amerika;#</item>
+    </string-array>
+
+    <string-array name="table_data_6">
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
+        <item>1;Mitra Australia;#</item>
+        <item>2;Mitra Australia;#</item>
+        <item>3;Mitra Australia;#</item>
+        <item>4;Mitra Australia;#</item>
+        <item>5;Mitra Australia;#</item>
+    </string-array>
+
+    <string-array name="table_data_7">
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
+        <item>1;Mitra Dalam Negeri;#</item>
+        <item>2;Mitra Dalam Negeri;#</item>
+        <item>3;Mitra Dalam Negeri;#</item>
+        <item>4;Mitra Dalam Negeri;#</item>
+        <item>5;Mitra Dalam Negeri;#</item>
+    </string-array>
+
     <!--  FRAGMENT GRAFIK  -->
     <string name="tab_text_1">Grafik Kiri</string>
     <string name="tab_text_2">Grafik Kanan</string>
@@ -58,6 +134,14 @@
     <string name="menu_daftar">Daftar Kerjasama</string>
     <string name="menu_prosedur">Prosedur</string>
     <string name="menu_grafik">Grafik</string>
+    <string name="menu_profile">Profile</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--  FRAGMENT PROFILE  -->
+    <string name="headerProfile">Welcome User</string>
+    <string name="descProfile">Description Photo</string>
+    <string name="profile_data">Data Profile</string>
+    <string name="share_button">Share</string>
 </resources>
