@@ -13,7 +13,7 @@
     <string name="description_home">Home Photo</string>
     <string name="description_indexhome">Kami menyediakan rekapitulasi perjanjian dengan rincian tujuan, pencapaian, dan dampak positifnya. Melalui portal ini, Anda dapat mengakses informasi mendalam tentang kerjasama kami, kontribusinya terhadap pertumbuhan dan inovasi, serta peluang kolaborasi di masa depan.</string>
 
-    
+
     <!--  FRAGMENT PROSEDUR  -->
     <string name="title_prosedur">Prosedur Pengajuan dan Format Naskah Kerjasama</string>
     <string name="description_prosedur">Prosedur Photo</string>
@@ -46,6 +46,13 @@
         <item>Penandatanganan bisa dilakukan secara desk to desk (pihak UNS terlebih dahulu), atau dengan acara penandatanganan</item>
     </string-array>
 
+
+    <!--  FRAGMENT GRAFIK  -->
+    <string name="tab_text_1">Grafik Kiri</string>
+    <string name="tab_text_2">Grafik Kanan</string>
+    <string name="content_tab_kiri">Welcome Grafik Kiri</string>
+    <string name="content_tab_kanan">Welcome Grafik Kanan</string>
+    <string name="content_tab_text">This is Tab %1$d</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_daftar">Daftar Kerjasama</string>
