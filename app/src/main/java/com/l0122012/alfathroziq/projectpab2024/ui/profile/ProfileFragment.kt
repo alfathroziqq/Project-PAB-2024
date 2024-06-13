@@ -71,16 +71,16 @@ class ProfileFragment : Fragment() {
                 val intent = Intent(Intent.ACTION_SEND)
                 intent.type = "text/plain"
                 intent.putExtra(Intent.EXTRA_SUBJECT, "PROJECT PAB")
-                intent.putExtra(Intent.EXTRA_EMAIL, arrayOf("kelompok4@gmail.com"))
+                intent.putExtra(Intent.EXTRA_EMAIL, arrayOf("kelompok6@gmail.com"))
                 intent.putExtra(
                     Intent.EXTRA_TEXT, """Halo, Perkenalkan.
-Nama        : Kelompok 4.
+Nama        : Kelompok 6.
 NIM         : L0122000
 Jurusan     : INFORMATIKA
 Angkatan    : 2022.
 Fakultas    : FATISDA
 UNIVERSITAS : Universitas Sebelas Maret
-Email       : kelompok4@gmail.com"""
+Email       : kelompok6@gmail.com"""
                 )
                 startActivity(Intent.createChooser(intent, "Share via..."))
             }
