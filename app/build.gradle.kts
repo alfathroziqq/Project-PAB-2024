@@ -52,6 +52,7 @@ dependencies {
     implementation(libs.material.v1110)
     implementation(libs.androidx.viewpager2)
     implementation(libs.williamchart)
+    implementation(libs.mpandroidchart)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

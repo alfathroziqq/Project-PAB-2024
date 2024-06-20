@@ -129,12 +129,15 @@
     <string name="content_tab_kiri">Welcome Grafik Kiri</string>
     <string name="content_tab_kanan">Welcome Grafik Kanan</string>
     <string name="content_tab_text">This is Tab %1$d</string>
-
+    <string name="title_grafikkiri">Keuangan Kerjasama Tahun ke Tahun</string>
+    <string name="title_grafikkanan">Jumlah Kerjasama Tahun ke Tahun</string>
+    
     <string name="menu_home">Home</string>
     <string name="menu_daftar">Daftar Kerjasama</string>
     <string name="menu_prosedur">Prosedur</string>
     <string name="menu_grafik">Grafik</string>
     <string name="menu_profile">Profile</string>
+    <string name="button_to_any">Pencet aja</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
