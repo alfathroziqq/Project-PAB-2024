@@ -10,25 +10,28 @@ import androidx.recyclerview.widget.RecyclerView
 import com.l0122012.alfathroziq.projectpab2024.R
 
 class TableFragment : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView = inflater.inflate(R.layout.fragment_table, container, false)
+        val view = inflater.inflate(R.layout.fragment_table, container, false)
 
-        val tableName = arguments?.getString("TABLE_NAME")
+        // Ambil argument tableName dari bundle
+        val args = TableFragmentArgs.fromBundle(requireArguments())
+        val tableName = args.tableName
 
-        tableName?.let {
-            val tableId = resources.getIdentifier(tableName, "array", requireContext().packageName)
-            val tableData = resources.getStringArray(tableId)
+        // Load data tabel berdasarkan tableName
+        val tableId = resources.getIdentifier(tableName, "array", requireActivity().packageName)
+        val tableData = resources.getStringArray(tableId)
+        val data = tableData.map { it.split(";").toTypedArray() }
 
-            val data = tableData.map { it.split(";").toTypedArray() }
+        // Tampilkan data di RecyclerView
+        val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        recyclerView.adapter = TableAdapter(data)
 
-            val recyclerView = rootView.findViewById<RecyclerView>(R.id.recyclerView)
-            recyclerView.layoutManager = LinearLayoutManager(requireContext())
-            recyclerView.adapter = TableAdapter(data)
-        }
-
-        return rootView
+        return view
     }
 }
+

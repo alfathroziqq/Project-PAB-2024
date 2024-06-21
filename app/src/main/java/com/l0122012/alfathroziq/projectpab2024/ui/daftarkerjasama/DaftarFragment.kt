@@ -5,26 +5,31 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.l0122012.alfathroziq.projectpab2024.databinding.FragmentDaftarBinding
+import androidx.navigation.fragment.findNavController
+import com.l0122012.alfathroziq.projectpab2024.R
 
 class DaftarFragment : Fragment() {
 
-    private var _binding: FragmentDaftarBinding? = null
-
-    private val binding get() = _binding!!
-
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        _binding = FragmentDaftarBinding.inflate(inflater, container, false)
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_daftar, container, false)
 
-        return binding.root
+        view.findViewById<View>(R.id.button1).setOnClickListener { openTableFragment("table_data_1") }
+        view.findViewById<View>(R.id.button2).setOnClickListener { openTableFragment("table_data_2") }
+        view.findViewById<View>(R.id.button3).setOnClickListener { openTableFragment("table_data_3") }
+        view.findViewById<View>(R.id.button4).setOnClickListener { openTableFragment("table_data_4") }
+        view.findViewById<View>(R.id.button5).setOnClickListener { openTableFragment("table_data_5") }
+        view.findViewById<View>(R.id.button6).setOnClickListener { openTableFragment("table_data_6") }
+        view.findViewById<View>(R.id.button7).setOnClickListener { openTableFragment("table_data_7") }
+
+        return view
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    private fun openTableFragment(tableName: String) {
+        val action = DaftarFragmentDirections.actionNavDaftarkerjasamaToNavTabelkerjasama(tableName)
+        findNavController().navigate(action)
     }
 }
+

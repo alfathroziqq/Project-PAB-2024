@@ -17,11 +17,107 @@
         android:label="@string/menu_prosedur"
         tools:layout="@layout/fragment_prosedur" />
 
+    <!--    KERJASAMA DAFTAR DAN TABEL -->
     <fragment
         android:id="@+id/nav_daftarkerjasama"
         android:name="com.l0122012.alfathroziq.projectpab2024.ui.daftarkerjasama.DaftarFragment"
         android:label="@string/menu_daftar"
-        tools:layout="@layout/fragment_daftar" />
+        tools:layout="@layout/fragment_daftar" >
+        <action
+            android:id="@+id/action_nav_daftarkerjasama_to_nav_tabelkerjasama"
+            app:destination="@id/nav_tabelkerjasama" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tabelkerjasama"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.daftarkerjasama.TableFragment"
+        android:label="@string/menu_daftar"
+        tools:layout="@layout/fragment_table" >
+        <argument
+            android:name="tableName"
+            app:argType="string"
+            android:defaultValue="default_table" />
+    </fragment>
+
+    <!-- Definisi tujuan untuk setiap tabel -->
+    <fragment
+        android:id="@+id/nav_tabelkerjasama_1"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.daftarkerjasama.TableFragment"
+        android:label="Table 1"
+        tools:layout="@layout/fragment_table">
+        <argument
+            android:name="tableName"
+            app:argType="string"
+            android:defaultValue="table_data_1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tabelkerjasama_2"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.daftarkerjasama.TableFragment"
+        android:label="Table 2"
+        tools:layout="@layout/fragment_table">
+        <argument
+            android:name="tableName"
+            app:argType="string"
+            android:defaultValue="table_data_2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tabelkerjasama_3"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.daftarkerjasama.TableFragment"
+        android:label="Table 3"
+        tools:layout="@layout/fragment_table">
+        <argument
+            android:name="tableName"
+            app:argType="string"
+            android:defaultValue="table_data_3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tabelkerjasama_4"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.daftarkerjasama.TableFragment"
+        android:label="Table 4"
+        tools:layout="@layout/fragment_table">
+        <argument
+            android:name="tableName"
+            app:argType="string"
+            android:defaultValue="table_data_4" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tabelkerjasama_5"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.daftarkerjasama.TableFragment"
+        android:label="Table 5"
+        tools:layout="@layout/fragment_table">
+        <argument
+            android:name="tableName"
+            app:argType="string"
+            android:defaultValue="table_data_5" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tabelkerjasama_6"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.daftarkerjasama.TableFragment"
+        android:label="Table 6"
+        tools:layout="@layout/fragment_table">
+        <argument
+            android:name="tableName"
+            app:argType="string"
+            android:defaultValue="table_data_6" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tabelkerjasama_7"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.daftarkerjasama.TableFragment"
+        android:label="Table 7"
+        tools:layout="@layout/fragment_table">
+        <argument
+            android:name="tableName"
+            app:argType="string"
+            android:defaultValue="table_data_7" />
+    </fragment>
+
+    <!--    GRAFIK -->
 
     <fragment
         android:id="@+id/nav_grafik"
