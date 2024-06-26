@@ -13,6 +13,47 @@
     <string name="description_home">Home Photo</string>
     <string name="description_indexhome">Kami menyediakan rekapitulasi perjanjian dengan rincian tujuan, pencapaian, dan dampak positifnya. Melalui portal ini, Anda dapat mengakses informasi mendalam tentang kerjasama kami, kontribusinya terhadap pertumbuhan dan inovasi, serta peluang kolaborasi di masa depan.</string>
 
+    <string name="judul_news1">UNS gandeng BPKP jalin kerja sama Tri Dharma Perguruan Tinggi</string>
+    <string name="judul_news2">UNS dan IKA UNS Jalin Kerja Sama dengan PT. KAI</string>
+    <string name="judul_news3">UNS Tanda Tangani MoU dengan Universitas Malahayati</string>
+
+    <string name="tgl_news1">21 September, 2022</string>
+    <string name="tgl_news2">11 Maret 2022</string>
+    <string name="tgl_news3">7 Agustus 20232</string>
+
+    <integer-array name="photo_news">
+        <item>@drawable/news_image1</item>
+        <item>@drawable/news_image2</item>
+        <item>@drawable/news_image3</item>
+    </integer-array>
+
+    <string-array name="judul_news">
+        <item>UNS gandeng BPKP jalin kerja sama Tri Dharma Perguruan Tinggi</item>
+        <item>UNS dan IKA UNS Jalin Kerja Sama dengan PT. KAI</item>
+        <item>UNS Tanda Tangani MoU dengan Universitas Malahayati</item>
+    </string-array>
+
+    <string-array name="detail_news">
+        <item>Universitas Sebelas Maret (UNS) Surakarta menggandeng Badan Pengawasan Keuangan dan Pembangunan (BPKP) untuk menjalin kerja sama Tri Dharma Perguruan Tinggi.
+        Rektor UNS Jamal Wiwoho di sela penandatanganan nota kesepahaman di Solo, Jawa Tengah, Rabu, berharap kerja sama tersebut dapat menyukseskan penyelenggaraan pemerintahan yang baik dan bersih sesuai dengan yang dicanangkan.
+        Untuk kerja sama yang terjalin antara UNS dan BPKP diselenggarakan dalam rangka pendayagunaan Center of Excellence (CoE) melalui swakelola.
+        Nota kesepahaman tersebut bertujuan untuk menunjang pelaksanaan tugas dan fungsi peningkatan kualitas pengawasan internal pemerintahan, memacu kreativitas dan kreasi bersama.
+        "Selain itu menumbuhkembangkan pendayagunaan hasil riset terapan dan kajian, juga mendorong kemajuan ilmu pengetahuan yang bermanfaat bagi pembangunan," katanya.</item>
+        <item>Universitas Sebelas Maret (UNS) Surakarta menjalin kerja sama dengan PT. Kereta Api Indonesia (KAI). Kerja sama ini ditandai dengan penandatanganan perjanjian kerja sama antara UNS dan PT. KAI pada Jumat (11/3/2022), bertepatan dengan Dies Natalis ke-46 UNS. Kerja sama juga terjalin antara PT. KAI dan Ikatan Keluarga Alumni (IKA) UNS.
+        Penandatanganan tersebut dilaksanakan secara luring di Ruang Sidang II Gedung dr. Prakosa UNS dan daring melalui aplikasi Zoom Cloud Meetings. Rektor UNS, Prof. Dr. Jamal Wiwoho didampingi Wakil Rektor Perencanaan Kerjasama Bisnis dan Informasi UNS, Prof. Dr.rer.nat. Sajidan hadir secara langsung dalam penandatanganan ini. Direktur Umum (Dirut) PT. KAI (persero), Didiek Hartyanto dan Ketua Umum IKA UNS, Ir. Budi Harto, M.M. juga turut hadir secara langsung.
+        Rektor UNS, Prof. Jamal menyambut baik kerja sama ini. Prof. Jamal mengatakan bahwa jalinan kerja sama semacam ini turut mewujudkan UNS untuk menjadi Menara Air bagi masyarakat sekitar.
+        “MoU ini salah satu Indikator Kinerja Utama (IKU) yaitu IKU ke-7. Jadi, diharapkan dengan adanya kerja sama ini kampus tidak hanya sekadar Menara Gading tapi harus bisa jadi Menara Air setidak-tidaknya untuk meningkatkan IKU 2 yakni program Merdeka Belajar Kampus Merdeka (MBKM) terealisasi. Ini adalah langkah awal. Selanjutnya, saya berharap KAI bisa menerima magang mahasiswa dan juga para profesional yang ada di PT KAI bisa mengajar di UNS,” ujar Prof. Jamal.
+        Kerja sama yang berdurasi dua tahun ini terwujud dalam bentuk pemberian diskon tarif tiket kereta api jarak jauh dan menengah. Besaran diskon tersebut adalah sebesar 10 persen. Diskon ini diberikan kepada dosen, tenaga kependidikan, dan anggota IKA UNS yang melakukan pemesanan tiket melalui aplikasi KAI Acces.
+        Timbal balik kerja sama ini adalah tingkat penggunaan kereta api untuk keperluan dinas dan perjalanan di lingkungan UNS bisa meningkat. Selain itu, UNS juga turut mempromosikan penggunaan aplikasi KAI Access yang dirancang dan dikembangkan oleh PT. KAI.
+        Dirut PT. KAI, Didiek Hartyanto mengungkapkan bahwa ini merupakan salah satu wujud kontribusinya sebagai alumnus UNS. Didiek berharap kerja sama ini dapat ditingkatkan ke kegiatan-kegiatan lainnya.
+        “Sebagai alumnus, saya ingin memberikan kontribusi untuk UNS. Seperti yang disampaikan Pak Rektor tadi, UNS punya prestasi yang membanggakan. Saya sebagai lulusannya bangga. Nah, untuk  itu bagaimana membangun kolaborasi. Ini yang pertama sivitas akademi UNS mau naik kereta api ada diskon. Pengembangan berikutnya ada kesinambungan antara UNS dan KAI. Jadi nanti ada pengayaan untuk mahasiswa sehingga ketika mereka lulus, mereka siap dengan sistem yang terkini,” ungkap Didiek.
+        Tidak hanya sivitas akademika, PT. KAI juga memberikan diskon tarif dengan besaran dan ketentuan yang sama untuk anggota IKA UNS. Hal ini sangat diapresiasi oleh Ketua IKA UNS, Ir. Budi Harto, M.M.
+        “Kerja sama ini akan memberikan fasilitas yang bagus untuk alumni. Perjalanan kereta akan lebih mudah, bermanfaat, dan lebih murah. Saya berharap kerja sama semacam ini dapat berkembang lagi,” tutur beliau.</item>
+        <item>Universitas Sebelas Maret (UNS) Surakarta menandatangani Memorandum of Understanding (MoU) dengan Universitas Malahayati Bandar Lampung pada Senin (7/8/2023). Penandatanganan MoU antara UNS dan Universitas Malahayati berlangsung secara luring di Gedung dr. Prakosa UNS.
+        Acara penandatanganan MoU dilakukan oleh Wakil Rektor Akademik dan Kemahasiswaan UNS, Prof. Dr. Ir. Ahmad Yunus, M.S., dan Rektor Universitas Malahayati,  Dr. Achmad Farich, dr., M.M. Penandatanganan MoU turut dihadiri oleh Dekan Fakultas Kedokteran (FK) UNS, Prof. Dr. Reviono, dr. Sp.P(K)., Koordinator Direktorat Kerja Sama Internasionalisasi UNS, Dr. Dimas Rahadian A. M., S.T.P., M.Sc., Koordinator Direktorat Kerja Sama, Pengembangan, dan Internasionalisasi UNS, Giyatno, S.IP., M.Si., Kepala Bagian Kerja Sama Universitas Malahayati, Wahid Tri Wahyudi, S.Kep., Ners., M.Kes., dan Kepala Humas Universitas Malahayati, Emil Tanhar, S.Kom.
+        Dalam penandatanganan MoU tersebut, UNS dan Universitas Malahayati sama-sama menyepakati nota kesepakatan untuk pelaksanaan tridarma perguruan tinggi dan penyelenggaraan Merdeka Belajar Kampus Merdeka (MBKM) dalam jangka waktu 5 tahun sejak penandatanganan resmi. MoU ini bertujuan untuk menyinergikan dan mengoptimalkan potensi dan sumber daya kedua belah pihak dalam rangka pengembangan kelembagaan dan pengembangan SDM.
+        Ruang lingkup dari MoU antara UNS dan Universitas Malahayati meliputi bidang pendidikan, penelitian, dan pengabdian masyarakat; penyelenggaraan MBKM; pengembangan SDM; serta bidang-bidang lain yang disepakati para pihak. Kedepannya, MoU ini akan ditindaklanjuti dengan Perjanjian Kerja Sama (PKS) antara UNS dan Universitas Malahayati.</item>
+    </string-array>
 
     <!--  FRAGMENT PROSEDUR  -->
     <string name="title_prosedur">Prosedur Pengajuan dan Format Naskah Kerjasama</string>
