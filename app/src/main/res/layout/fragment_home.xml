@@ -51,7 +51,7 @@
             android:layout_height="200dp"
             android:layout_marginBottom="15dp"
             android:layout_gravity="center"
-            android:src="@drawable/img"
+            android:src="@drawable/home"
             android:contentDescription="@string/description_home" />
 
         <fragment
