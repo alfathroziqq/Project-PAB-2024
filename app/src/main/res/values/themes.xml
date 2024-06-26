@@ -24,6 +24,14 @@
         <item name="android:layout_gravity">bottom</item>
     </style>
 
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_bottom_sheet</item>
+    </style>
+
     <style name="CustomButton" parent="Widget.AppCompat.Button">
         <item name="android:background">@drawable/button_outline</item>
         <item name="android:textColor">@color/black</item>

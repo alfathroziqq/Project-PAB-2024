@@ -16,6 +16,7 @@
 
     <!--  FRAGMENT PROSEDUR  -->
     <string name="title_prosedur">Prosedur Pengajuan dan Format Naskah Kerjasama</string>
+    <string name="subtitle_prosedur">Panduan Upload Kerjasama UNS</string>
     <string name="description_prosedur">Prosedur Photo</string>
     <string name="description_prosedur1">Prosedur baku penyelenggara kerja sama di lingkungan UNS diatur dalam Peraturan Rektor No. 518/UN27/HK/2016</string>
     <string name="unduh_document">unduh disini</string>
