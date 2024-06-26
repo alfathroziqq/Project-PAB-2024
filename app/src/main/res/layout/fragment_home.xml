@@ -1,42 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment"
-    android:background="@drawable/backgroundall"
-    android:padding="10dp"
-    android:orientation="vertical">
+    tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="18dp"
-        android:fontFamily="@font/koho"
-        android:textStyle="bold"
-        android:text="@string/title_home"
-        android:textSize="40sp"
-        android:textColor="@color/black" />
+        android:orientation="vertical"
+        android:background="@drawable/backgroundall"
+        android:padding="10dp">
 
-    <ImageView
-        android:id="@+id/logo_maskot"
-        android:layout_margin="25dp"
-        android:layout_width="280dp"
-        android:layout_height="360dp"
-        android:layout_gravity="center"
-        android:src="@drawable/maskot"
-        android:contentDescription="@string/description_home" />
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:fontFamily="@font/koho"
+            android:textStyle="bold"
+            android:text="@string/title_home"
+            android:textSize="40sp"
+            android:textColor="@color/black" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp"
-        android:textColor="@color/black"
-        android:textSize="17sp"
-        android:fontFamily="@font/koho"
-        android:textAlignment="center"
-        android:justificationMode="inter_word"
-        android:text="@string/description_indexhome"/>
-</LinearLayout>
+        <ImageView
+            android:id="@+id/logo_maskot"
+            android:layout_margin="25dp"
+            android:layout_width="280dp"
+            android:layout_height="360dp"
+            android:layout_gravity="center"
+            android:src="@drawable/maskot"
+            android:contentDescription="@string/description_home" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:fontFamily="@font/koho"
+            android:textAlignment="center"
+            android:justificationMode="inter_word"
+            android:text="@string/description_indexhome"/>
+
+        <ImageView
+            android:id="@+id/qr_code"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img"
+            android:contentDescription="@string/description_home" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+    </LinearLayout>
+</ScrollView>
