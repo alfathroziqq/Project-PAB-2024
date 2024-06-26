@@ -11,7 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/sectionsContainer">
 
         <TextView
             android:layout_width="match_parent"
@@ -44,6 +45,15 @@
                 android:src="@drawable/logouns" />
         </androidx.cardview.widget.CardView>
 
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            app:videoId="n6XVTEE-1I4"
+            app:autoPlay="true" />
+
         <TextView
             android:id="@+id/tv_profile_data"
             android:layout_width="match_parent"
@@ -69,6 +79,71 @@
             android:textStyle="bold"
             android:textSize="19sp"
             android:text="@string/desc_uns"/>
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:background="@drawable/textbox"
+            android:fontFamily="@font/koho"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:text="@string/sejarah" />
+        <TextView
+            android:id="@+id/tv_vision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:background="@drawable/textbox"
+            android:fontFamily="@font/koho"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:text="@string/visi" />
+        <TextView
+            android:id="@+id/tv_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:background="@drawable/textbox"
+            android:fontFamily="@font/koho"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:text="@string/misi" />
+        <TextView
+            android:id="@+id/tv_goals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:background="@drawable/textbox"
+            android:fontFamily="@font/koho"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:text="@string/tujuan" />
+        <TextView
+            android:id="@+id/tv_collaboration_culture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:background="@drawable/textbox"
+            android:fontFamily="@font/koho"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:text="@string/budaya_kerjasama" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonShare"
@@ -85,9 +160,9 @@
             android:textSize="16sp"
             android:layout_gravity="center"
             android:drawableStart="@drawable/share"
-            android:drawablePadding="-50dp"
+            android:drawablePadding="10dp"
             android:paddingStart="20dp"
-            android:text="@string/share_button"
+            android:text="@string/share"
             tools:ignore="RtlSymmetry" />
     </LinearLayout>
 </ScrollView>
