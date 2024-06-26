@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.data.BarData
@@ -18,6 +19,7 @@ import com.github.mikephil.charting.utils.ColorTemplate
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import com.github.mikephil.charting.formatter.PercentFormatter
+import com.l0122012.alfathroziq.projectpab2024.R
 import com.l0122012.alfathroziq.projectpab2024.databinding.FragmentGrafikKiriBinding
 
 class GrafikKiriFragment : Fragment() {
@@ -43,6 +45,15 @@ class GrafikKiriFragment : Fragment() {
 
         setupBarChart()
         setupPieChart()
+
+        // Set up click listener for the button
+        binding.buttonkeuangankiri.setOnClickListener {
+            findNavController().navigate(R.id.action_grafikKiriFragment_to_detailKeuanganKiriFragment)
+        }
+
+        binding.buttonperusahaankiri.setOnClickListener {
+            findNavController().navigate(R.id.action_grafikKiriFragment_to_detailPerusahaanKiriFragment)
+        }
     }
 
     private fun setupBarChart() {
