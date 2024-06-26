@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -15,6 +16,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.l0122012.alfathroziq.projectpab2024.R
 import com.l0122012.alfathroziq.projectpab2024.databinding.FragmentProsedurBinding
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
 
 class ProsedurFragment : Fragment() {
 
@@ -43,14 +45,18 @@ class ProsedurFragment : Fragment() {
             showBottomSheet()
         }
 
+        val youTubePlayerView: YouTubePlayerView = binding.root.findViewById(R.id.youtube_player_view)
+        lifecycle.addObserver(youTubePlayerView)
+
         return binding.root
     }
 
     @SuppressLint("InflateParams")
     private fun showBottomSheet() {
-        val dialog = BottomSheetDialog(requireContext())
+        val dialog = BottomSheetDialog(requireContext(), R.style.CustomBottomSheetDialogTheme)
         val sheetView = layoutInflater.inflate(R.layout.bottomsheet, null)
         val recyclerView: RecyclerView = sheetView.findViewById(R.id.recyclerView)
+
 
         val titles = resources.getStringArray(R.array.procedure_titles)
         val descriptions = resources.getStringArray(R.array.procedure_descriptions)
@@ -63,6 +69,10 @@ class ProsedurFragment : Fragment() {
         recyclerView.adapter = ProcedureAdapter(items)
 
         dialog.setContentView(sheetView)
+
+        val bottomSheet = dialog.findViewById<View>(com.google.android.material.R.id.design_bottom_sheet)
+        bottomSheet?.background = ContextCompat.getDrawable(requireContext(), R.drawable.rounded_bottom_sheet)
+
         val behavior = BottomSheetBehavior.from(sheetView.parent as View)
         behavior.peekHeight = (resources.displayMetrics.heightPixels * 0.7).toInt()
         behavior.maxHeight = (resources.displayMetrics.heightPixels * 0.7).toInt()
