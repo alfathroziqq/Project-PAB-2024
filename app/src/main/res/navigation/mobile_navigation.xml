@@ -126,6 +126,50 @@
         tools:layout="@layout/fragment_grafik" />
 
     <fragment
+        android:id="@+id/nav_grafik_kiri"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.grafik.GrafikKiriFragment"
+        android:label="@string/menu_grafik"
+        tools:layout="@layout/fragment_grafik_kiri" />
+
+    <fragment
+        android:id="@+id/detailKeuanganKiriFragment"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.grafik.DetailKeuanganKiri"
+        android:label="Detail Keuangan"
+        tools:layout="@layout/fragment_detail_keuangan_kiri" />
+        <action
+            android:id="@+id/action_grafikKiriFragment_to_detailKeuanganKiriFragment"
+            app:destination="@id/detailKeuanganKiriFragment" />
+
+    <fragment
+        android:id="@+id/detailPerusahaanKiriFragment"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.grafik.DetailPerusahaanKiri"
+        android:label="Detail Perusahaan"
+        tools:layout="@layout/fragment_detail_perusahaan_kiri" />
+    <action
+        android:id="@+id/action_grafikKiriFragment_to_detailPerusahaanKiriFragment"
+        app:destination="@id/detailPerusahaanKiriFragment" />
+
+    <fragment
+        android:id="@+id/detailKeuanganKananFragment"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.grafik.DetailKeuanganKanan"
+        android:label="Detail Perusahaan"
+        tools:layout="@layout/fragment_detail_keuangan_kanan" />
+    <action
+        android:id="@+id/action_grafikKananFragment_to_detailKeuanganKananFragment"
+        app:destination="@id/detailKeuanganKananFragment" />
+
+    <fragment
+        android:id="@+id/detailPerusahaanKananFragment"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.grafik.DetailPerusahaanKanan"
+        android:label="Detail Perusahaan"
+        tools:layout="@layout/fragment_detail_perusahaan_kanan" />
+    <action
+        android:id="@+id/action_grafikKananFragment_to_detailPerusahaanKananFragment"
+        app:destination="@id/detailPerusahaanKananFragment" />
+
+    <!--  PROFILE  -->
+
+    <fragment
         android:id="@+id/nav_profile"
         android:name="com.l0122012.alfathroziq.projectpab2024.ui.profile.ProfileFragment"
         android:label="@string/menu_profile"

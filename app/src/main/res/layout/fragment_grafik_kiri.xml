@@ -51,14 +51,33 @@
 
         </RelativeLayout>
 
-        <Button
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="50dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:text="@string/button_to_any"/>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp">
+
+            <Button
+                android:id="@+id/buttonkeuangankiri"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:drawableTop="@drawable/salary"
+                android:text="Detail Keuangan"/>
+
+            <Button
+                android:id="@+id/buttonperusahaankiri"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="10dp"
+                android:paddingTop="15dp"
+                android:drawableTop="@drawable/enterprise"
+                android:layout_weight="1"
+                android:text="Detail Kerjasama"/>
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
