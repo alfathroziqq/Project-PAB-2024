@@ -5,25 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundall"
-    android:padding="10dp"
     tools:context=".ui.profile.ProfileFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="90dp"
         android:id="@+id/sectionsContainer">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
-            android:padding="5dp"
-            android:background="@drawable/textbox"
+            android:layout_marginVertical="18dp"
             android:fontFamily="@font/koho"
-            android:textSize="25sp"
+            android:textSize="29sp"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textAlignment="center"
@@ -32,15 +30,16 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="225dp"
-            android:layout_height="225dp"
+            android:layout_height="140dp"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
             app:cardCornerRadius="15dp">
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="235dp"
-                android:layout_height="243dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
                 android:contentDescription="@string/descProfile"
                 android:src="@drawable/logouns" />
         </androidx.cardview.widget.CardView>
@@ -49,120 +48,32 @@
             android:id="@+id/youtube_player_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:paddingVertical="10dp"
             android:layout_marginBottom="20dp"
             app:videoId="n6XVTEE-1I4"
-            app:autoPlay="true" />
+            app:autoPlay="false" />
 
         <TextView
             android:id="@+id/tv_profile_data"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
             android:padding="9dp"
-            android:background="@drawable/textbox"
             android:fontFamily="@font/koho"
             android:textStyle="bold"
             android:text="@string/profile_data"
             android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@color/black" />
+            android:textColor="?colorOnBackground"
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
             android:justificationMode="inter_word"
             android:fontFamily="@font/koho"
+            android:textColor="?colorOnBackground"
             android:textStyle="bold"
-            android:textSize="19sp"
+            android:textSize="17sp"
             android:text="@string/desc_uns"/>
-        <TextView
-            android:id="@+id/tv_history"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:padding="10dp"
-            android:background="@drawable/textbox"
-            android:fontFamily="@font/koho"
-            android:textStyle="bold"
-            android:textSize="19sp"
-            android:text="@string/sejarah" />
-        <TextView
-            android:id="@+id/tv_vision"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:padding="10dp"
-            android:background="@drawable/textbox"
-            android:fontFamily="@font/koho"
-            android:textStyle="bold"
-            android:textSize="19sp"
-            android:text="@string/visi" />
-        <TextView
-            android:id="@+id/tv_mission"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:padding="10dp"
-            android:background="@drawable/textbox"
-            android:fontFamily="@font/koho"
-            android:textStyle="bold"
-            android:textSize="19sp"
-            android:text="@string/misi" />
-        <TextView
-            android:id="@+id/tv_goals"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:padding="10dp"
-            android:background="@drawable/textbox"
-            android:fontFamily="@font/koho"
-            android:textStyle="bold"
-            android:textSize="19sp"
-            android:text="@string/tujuan" />
-        <TextView
-            android:id="@+id/tv_collaboration_culture"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:padding="10dp"
-            android:background="@drawable/textbox"
-            android:fontFamily="@font/koho"
-            android:textStyle="bold"
-            android:textSize="19sp"
-            android:text="@string/budaya_kerjasama" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buttonShare"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="60dp"
-            android:background="@drawable/button"
-            android:fontFamily="@font/koho"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:layout_gravity="center"
-            android:drawableStart="@drawable/share"
-            android:drawablePadding="10dp"
-            android:paddingStart="20dp"
-            android:text="@string/share"
-            tools:ignore="RtlSymmetry" />
     </LinearLayout>
 </ScrollView>

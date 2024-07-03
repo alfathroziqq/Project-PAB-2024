@@ -1,11 +1,21 @@
 package com.l0122012.alfathroziq.projectpab2024.ui.profile
 
+import android.graphics.Color
+import android.graphics.Paint
+import android.graphics.Typeface
+import android.graphics.drawable.GradientDrawable
+import android.graphics.text.LineBreaker
 import android.os.Bundle
 import android.text.Html
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.content.ContextCompat
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import com.l0122012.alfathroziq.projectpab2024.R
 import com.l0122012.alfathroziq.projectpab2024.databinding.FragmentProfileBinding
@@ -23,14 +33,6 @@ class ProfileFragment : Fragment() {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        // Mendapatkan bundle profil dari arguments
-        val profileBundle = arguments?.getBundle("profileBundle")
-        val name = profileBundle?.getString(EXTRA_NAME)
-
-        // Menampilkan nama di TextView
-        val text = "Name: $name"
-        binding.tvProfileData.text = text
-
         // Mendapatkan array judul dan konten dari resources
         val sectionTitles = resources.getStringArray(R.array.judul_profile)
         val sectionContents = resources.getStringArray(R.array.detail_profile)
@@ -40,24 +42,45 @@ class ProfileFragment : Fragment() {
 
         // Menambahkan judul dan konten ke dalam container
         for (i in sectionTitles.indices) {
-            val titleView = TextView(requireContext())
-            titleView.text = sectionTitles[i]
-            titleView.textSize = 20f
-            titleView.setPadding(10, 10, 10, 10)
+            val typeface = ResourcesCompat.getFont(requireContext(), R.font.koho)
 
-            val contentView = TextView(requireContext())
-            contentView.text = Html.fromHtml(sectionContents[i])
-            contentView.textSize = 16f
-            contentView.setPadding(10, 10, 10, 10)
+            val titleView = TextView(requireContext()).apply {
+                text = sectionTitles[i]
+                textSize = 20f
+                setPadding(0, 0, 0, 10)
+                gravity = Gravity.CENTER_HORIZONTAL
+                setTypeface(typeface, Typeface.BOLD)
+                setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
+            }
+
+            val lineDrawable = GradientDrawable().apply {
+                shape = GradientDrawable.RECTANGLE
+                setColor(Color.BLACK)
+                cornerRadius = 10f
+            }
+
+            val lineView = View(requireContext()).apply {
+                background = lineDrawable
+                val layoutParams = LinearLayout.LayoutParams(
+                    500,10
+                ).apply {
+                    setMargins(0, 0, 0, 15)
+                    gravity = Gravity.CENTER_HORIZONTAL
+                }
+                setLayoutParams(layoutParams)
+            }
+
+            val contentView = TextView(requireContext()).apply {
+                text = Html.fromHtml(sectionContents[i])
+                textSize = 17f
+                justificationMode = LineBreaker.JUSTIFICATION_MODE_INTER_WORD
+                setTypeface(typeface, Typeface.BOLD)
+                setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
+            }
 
             sectionsContainer.addView(titleView)
+            sectionsContainer.addView(lineView)
             sectionsContainer.addView(contentView)
-        }
-
-        // Mendapatkan tombol Share dan menambahkan onClickListener
-        val buttonShare = binding.buttonShare
-        buttonShare.setOnClickListener {
-            shareProfileInfo(profileBundle)
         }
 
         return view
@@ -66,14 +89,5 @@ class ProfileFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
-
-    private fun shareProfileInfo(profileBundle: Bundle?) {
-        // Implementasi untuk berbagi informasi profil
-    }
-
-    companion object {
-        const val EXTRA_NAME = "extra_name"
-        // Tambahkan konstanta-konstanta lainnya seperti EXTRA_PRODI, EXTRA_BATCH, dsb. sesuai kebutuhan
     }
 }
