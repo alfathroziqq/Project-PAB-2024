@@ -8,34 +8,39 @@
 
     <TextView
         android:id="@+id/item_number"
-        style="@style/TextAppearance.Material3.TitleMedium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:background="@drawable/baseline_round_24"
         android:text="@string/label_no"
+        android:fontFamily="@font/koho"
+        android:textStyle="bold"
+        android:textColor="?colorOnBackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/item_title"
-        style="@style/TextAppearance.Material3.TitleMedium"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:text="@string/label_title"
+        android:fontFamily="@font/koho"
+        android:textStyle="bold"
+        android:textColor="?colorOnBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/item_number"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/item_body"/>
+        app:layout_constraintBottom_toTopOf="@id/item_content"/>
 
     <TextView
-        android:id="@+id/item_body"
-        style="@style/TextAppearance.Material3.BodyMedium"
+        android:id="@+id/item_content"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:text="@string/label_desc"
+        android:textColor="?colorOnBackground"
+        android:fontFamily="@font/koho"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/item_number"
         app:layout_constraintTop_toBottomOf="@id/item_title"

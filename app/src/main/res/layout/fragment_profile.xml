@@ -52,28 +52,5 @@
             android:layout_marginBottom="20dp"
             app:videoId="n6XVTEE-1I4"
             app:autoPlay="false" />
-
-        <TextView
-            android:id="@+id/tv_profile_data"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="9dp"
-            android:fontFamily="@font/koho"
-            android:textStyle="bold"
-            android:text="@string/profile_data"
-            android:textAlignment="center"
-            android:textColor="?colorOnBackground"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:justificationMode="inter_word"
-            android:fontFamily="@font/koho"
-            android:textColor="?colorOnBackground"
-            android:textStyle="bold"
-            android:textSize="17sp"
-            android:text="@string/desc_uns"/>
     </LinearLayout>
 </ScrollView>

@@ -8,12 +8,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.firebase.Firebase
+import com.google.firebase.firestore.firestore
 import com.l0122012.alfathroziq.projectpab2024.R
 import com.l0122012.alfathroziq.projectpab2024.databinding.FragmentProsedurBinding
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
@@ -57,27 +60,39 @@ class ProsedurFragment : Fragment() {
         val sheetView = layoutInflater.inflate(R.layout.bottomsheet, null)
         val recyclerView: RecyclerView = sheetView.findViewById(R.id.recyclerView)
 
+        // Mengambil data dari Firestore
+        val db = Firebase.firestore
+        val collectionPath = "kerjasama/prosedur/prosedur-kerjasama"
 
-        val titles = resources.getStringArray(R.array.procedure_titles)
-        val descriptions = resources.getStringArray(R.array.procedure_descriptions)
+        db.collection(collectionPath)
+            .orderBy("number")
+            .get()
+            .addOnSuccessListener { result ->
+                val items = result.map { document ->
+                    ProcedureItem(
+                        number = document.getLong("number")?.toInt() ?: 0,
+                        title = document.getString("title") ?: "",
+                        content = document.getString("content") ?: ""
+                    )
+                }
 
-        val items = titles.indices.map { index ->
-            ProcedureItem(index + 1, titles[index], descriptions[index])
-        }
+                recyclerView.layoutManager = LinearLayoutManager(requireContext())
+                recyclerView.adapter = ProcedureAdapter(items)
 
-        recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recyclerView.adapter = ProcedureAdapter(items)
+                dialog.setContentView(sheetView)
 
-        dialog.setContentView(sheetView)
+                val bottomSheet = dialog.findViewById<View>(com.google.android.material.R.id.design_bottom_sheet)
+                bottomSheet?.background = ContextCompat.getDrawable(requireContext(), R.drawable.rounded_bottom_sheet)
 
-        val bottomSheet = dialog.findViewById<View>(com.google.android.material.R.id.design_bottom_sheet)
-        bottomSheet?.background = ContextCompat.getDrawable(requireContext(), R.drawable.rounded_bottom_sheet)
-
-        val behavior = BottomSheetBehavior.from(sheetView.parent as View)
-        behavior.peekHeight = (resources.displayMetrics.heightPixels * 0.7).toInt()
-        behavior.maxHeight = (resources.displayMetrics.heightPixels * 0.7).toInt()
-        behavior.expandedOffset = (resources.displayMetrics.heightPixels * 0.3).toInt()
-        dialog.show()
+                val behavior = BottomSheetBehavior.from(sheetView.parent as View)
+                behavior.peekHeight = (resources.displayMetrics.heightPixels * 0.7).toInt()
+                behavior.maxHeight = (resources.displayMetrics.heightPixels * 0.7).toInt()
+                behavior.expandedOffset = (resources.displayMetrics.heightPixels * 0.3).toInt()
+                dialog.show()
+            }
+            .addOnFailureListener { exception ->
+                Toast.makeText(requireContext(), "Error: ${exception.message}", Toast.LENGTH_SHORT).show()
+            }
     }
 
     override fun onDestroyView() {

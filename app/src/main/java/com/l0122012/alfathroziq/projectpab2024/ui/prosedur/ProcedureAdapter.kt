@@ -12,7 +12,7 @@ class ProcedureAdapter(private val items: List<ProcedureItem>) : RecyclerView.Ad
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val itemNumber: TextView = view.findViewById(R.id.item_number)
         val itemTitle: TextView = view.findViewById(R.id.item_title)
-        val itemBody: TextView = view.findViewById(R.id.item_body)
+        val itemContent: TextView = view.findViewById(R.id.item_content)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -24,7 +24,7 @@ class ProcedureAdapter(private val items: List<ProcedureItem>) : RecyclerView.Ad
         val item = items[position]
         holder.itemNumber.text = item.number.toString()
         holder.itemTitle.text = item.title
-        holder.itemBody.text = item.body
+        holder.itemContent.text = item.content
     }
 
     override fun getItemCount(): Int {

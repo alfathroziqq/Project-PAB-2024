@@ -18,6 +18,9 @@ cardview = "1.0.0"
 viewpager2 = "1.1.0"
 williamchart = "3.10.1"
 playServicesMaps = "18.2.0"
+googleGmsGoogleServices = "4.4.2"
+firebaseDatabase = "21.0.0"
+firebaseFirestoreKtx = "25.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -37,8 +40,11 @@ material-v1110 = { module = "com.google.android.material:material", version.ref 
 mpandroidchart = { module = "com.github.PhilJay:MPAndroidChart", version.ref = "mpandroidchart" }
 williamchart = { module = "com.diogobernardino:williamchart", version.ref = "williamchart" }
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+googleGmsGoogleServices = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
 

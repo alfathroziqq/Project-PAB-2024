@@ -61,27 +61,6 @@
     <string name="label_title">Title</string>
     <string name="label_desc">Description</string>
 
-    <string-array name="procedure_titles">
-        <item>Ide/Inisiasi Kerjasama</item>
-        <item>Menyusun Draft Dokumen Kerjasama</item>
-        <item>Cek Kelengkapan</item>
-        <item>Diskusi Hasil Review (jika diperlukan)</item>
-        <item>Telaah Dokumen</item>
-        <item>Diskusi Hasil Telaah dari DKS atau triparit</item>
-        <item>Penandatanganan</item>
-    </string-array>
-
-    <string-array name="procedure_descriptions">
-        <item>Dapat berasal dari civitas UNS atau pihak eksternal (mitra)</item>
-        <item>Dilakukan oleh inisiator bersama pihak mitra, menggunakan template dari kerjasama @uns.ac.id</item>
-        <item>Draft naskah dikirimkan ke kerjasama @uns.ac.id (Dengan surat pengantar dari Ka. Dept tertuju ke Dekan)</item>
-        <item>Unit kerjasama UNS akan melengkapi bagian yang kosong dan mengontak inisiator untuk mendiskusikan saran perubahan (jika ada)</item>
-        <item>Draft akan dikirimkan oleh UNS ke Direktorat Kerja Sama (DKS). DKS akan Melakukan telaah dokumen, yang juga akan direview oleh BLLH dan IO (untuk kerjasama internasional)</item>
-        <item>Hasil telaah akan disampaikan ke inisiator via UNS. Perubahan akan ditelaah kembali hingga final dan disetujui semua pihak</item>
-        <item>Penandatanganan bisa dilakukan secara desk to desk (pihak UNS terlebih dahulu), atau dengan acara penandatanganan</item>
-    </string-array>
-
-
     <!--  FRAGMENT DAFTAR KERJASAMA  -->
     <string name="header_data_1">Kerjasama ASEAN</string>
 
@@ -177,59 +156,5 @@
 
     <!--  FRAGMENT PROFILE  -->
     <string name="headerProfile">Profile UNS</string>
-    <string name="descProfile">Description Photo</string>
-    <string name="profile_data">Deskripsi</string>
-    <string name="share_button">Share</string>
-    <string name="desc_uns">UNS adalah universitas negeri di Surakarta, Jawa Tengah, Indonesia, didirikan pada 11 Maret 1976. Kampus ini dikenal dengan fokus pada ilmu pengetahuan dan teknologi. Lingkungannya hijau dan dilengkapi fasilitas modern seperti perpustakaan, laboratorium, dan pusat olahraga. UNS menawarkan berbagai program studi dari tingkat sarjana hingga doktoral. Selain itu, universitas ini aktif dalam kegiatan sosial, budaya, dan memiliki kerjasama internasional untuk meningkatkan kualitas pendidikan dan penelitian.</string>
-    <string name="sejarah">Sejarah</string>
-    <string name="tujuan">Tujuan</string>
-    <string name="budaya_kerjasama">Budaya Kerjasama</string>
-    <string name="share">Share</string>
-    <string name="desSejarah">Universitas Sebelas Maret (UNS) resmi didirikan pada 11 Maret 1976 di Solo. Upaya untuk mendirikan universitas negeri di Solo sudah dimulai sejak 1950-an, namun terkendala oleh perang, situasi politik, dan ekonomi. Pada tahun 1963, muncul Universitas Kota Praja Surakarta (UPKS), yang kemudian dibubarkan setelah peristiwa G30S/PKI.Pada 1966, Universitas Nasional Saraswati dan beberapa universitas lainnya membentuk Universitas Gabungan Surakarta (UGS). Pada Desember 1975, UGS disetujui untuk dinegerikan, dan pada 11 Maret 1976, Universitas Negeri Surakarta Sebelas Maret resmi berdiri dengan sembilan fakultas. Kampus utama UNS berada di Kentingan, Jebres, Surakarta, sejak 1977. Pada tahun 1982, nama universitas diubah menjadi Universitas Sebelas Maret (UNS) sesuai Keputusan Presiden RI No. 55 Tahun 1982.</string>
-    <string name="visi">Visi</string>
-    <string name="misi">Misi</string>
-
-    <string-array name="judul_profile">
-        <item>Sejarah</item>
-        <item>Visi</item>
-        <item>Misi</item>
-        <item>Tujuan</item>
-        <item>Budaya Kerja</item>
-    </string-array>
-
-    <string-array name="detail_profile">
-        <item><![CDATA[<p>Universitas Sebelas Maret (UNS) resmi berdiri pada tanggal 11 Maret 1976 di Solo, dengan dibacakannya Keputusan Presiden Republik Indonesia tentang pembukaan universitas tersebut. Keinginan untuk mendirikan universitas negeri di Solo sudah ada sejak tahun 1950-an, namun terkendala oleh berbagai masalah seperti perang, ketidakstabilan politik, dan ekonomi yang buruk.
-            Upaya pendirian kembali muncul beberapa kali, di antaranya pada tahun 1953 dan 1968, namun selalu gagal karena kendala finansial dan kurangnya dukungan. Pada tahun 1975, delapan universitas swasta dan kedinasan bergabung menjadi Universitas Gabungan Surakarta (UGS). Pada 11 Maret 1976, UGS resmi dinegerikan dan digabung dengan beberapa perguruan tinggi lainnya untuk membentuk UNS.
-            Sejak tahun 1977, UNS memiliki kampus induk terpadu di Kentingan, Jebres, Surakarta. Pada tahun 1982, nama resmi universitas ini ditetapkan menjadi Universitas Sebelas Maret (UNS) melalui Keputusan Presiden RI No. 55 Tahun 1982.</p>]]></item>
-        <item><![CDATA[<p>Menjadi pusat pengembangan ilmu pengetahuan, teknologi, dan seni yang unggul di tingkat internasional dengan berlandaskan pada nilai luhur budaya nasional.</p>]]></item>
-        <item><![CDATA[
-            <ol>
-                <li>Menyelanggarakan pendidikan dan pengajraran yang menuntut pengembangan diri Dosen dan mendorong kemandirian Mahasiswa dalam memperoleh pengetahuan, keterampilan, dan sikap;</li>
-                <li>Menyelenggarakan penelitian yang berbasis pada penemuan baru di bidang ilmu pengetahuan, teknologi, dan seni; dan</li>
-                <li>Menyelenggarakan kegiatan pengabdian masyarakat yang berorientasi pada upaya pemberedayaan masyarakat.</li>
-            </ol>
-        ]]></item>
-        <item><![CDATA[
-            <ol>
-                <li>Menciptakan lingkungan yang mendorong Warga Kampus UNS mengembangkan kemampuan diri secara optimal;</li>
-                <li>Menghasilkan lulusan yang bertakwa kepada Tuhan Yang Maha Esa, berbudi luhur, cerdas, terampil, mandiri, dan sehat jasmani, rohani, dan sosial;</li>
-                <li>Menciptakan wahana pengembangan ilmu pengetahuan dan teknologi yang berdaya guna dan berhasil guna;</li>
-                <li>Mendiseminasikan hasil pendidikan dan pengajaran serta penelitian dan pengabdian kepada masyarakat sehingga terjadi transformasi berkelanjutan untuk kehidupan yang lebih sejahtera;</li>
-                <li>Mengembangkan nilai luhur budaya nasional sebagai salah satu landasan berpikir, bersikap, dan berperilaku dalam kehidupan;</li>
-                <li>Mewujudkan pranata kehidupan yang beradab menuju terciptanya masyarakat yang tertib dan damai;</li>
-                <li>Menciptakan kehidupan berbangsa dan bernegara yang berdaulat, bersatu, adil, dan makmur; dan</li>
-                <li>Menjadikan UNS sebagai universitas bereputasi internasional.</li>
-            </ol>
-        ]]></item>
-        <item><![CDATA[
-            <ol>
-                <li>Orientasi berprestasi;</li>
-                <li>Mengutamakan kepuasan pengguna jasa;</li>
-                <li>Kerja sama;</li>
-                <li>Integritas;</li>
-                <li>Berwawasan ke depan; dan</li>
-                <li>Kewirausahaan.</li>
-            </ol>
-        ]]></item>
-    </string-array>
+    <string name="descProfile">Logo UNS</string>
 </resources>

@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("androidx.navigation.safeargs.kotlin")
     id("kotlin-parcelize")
+    alias(libs.plugins.googleGmsGoogleServices)
 }
 
 android {
@@ -56,6 +57,8 @@ dependencies {
     implementation(libs.williamchart)
     implementation(libs.mpandroidchart)
     implementation(libs.play.services.maps)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.firestore.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
