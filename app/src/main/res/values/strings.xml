@@ -86,76 +86,66 @@
     <string name="header_data_1">Kerjasama ASEAN</string>
 
     <string-array name="table_data_1">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
-        <item>1;Mitra ASEAN;#</item>
-        <item>2;Mitra ASEAN Kerjasama dengan UNS;#</item>
-        <item>3;Mitra ASEAN;#</item>
-        <item>4;Mitra ASEAN;#</item>
-        <item>5;Mitra ASEAN;#</item>
-        <item>6;Mitra ASEAN;#</item>
-        <item>7;Mitra ASEAN;#</item>
-        <item>8;Mitra ASEAN;#</item>
-        <item>9;Mitra ASEAN;#</item>
-        <item>10;Mitra ASEAN;#</item>
-        <item>11;Mitra ASEAN;#</item>
-        <item>12;Mitra ASEAN;#</item>
-        <item>13;Mitra ASEAN;#</item>
-        <item>14;Mitra ASEAN;#</item>
-        <item>15;Mitra ASEAN Kerjasama;#</item>
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
+        <item>1;Mitra ASEAN;#;Rp #</item>
+        <item>2;Mitra ASEAN Kerjasama dengan UNS;#;Rp #</item>
+        <item>3;Mitra UNS;#;Rp #</item>
+        <item>4;Mitra ASEAN;#;Rp #</item>
+        <item>5;Mitra ASEAN Kerjasama;#;Rp #</item>
     </string-array>
 
     <string-array name="table_data_2">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
-        <item>1;Mitra Asia;#</item>
-        <item>2;Mitra Asia;#</item>
-        <item>3;Mitra Asia;#</item>
-        <item>4;Mitra Asia;#</item>
-        <item>5;Mitra Asia;#</item>
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
+        <item>1;Mitra Asia;#;Rp #</item>
+        <item>2;Mitra Asia;#;Rp #</item>
+        <item>3;Mitra Asia;#;Rp #</item>
+        <item>4;Mitra Asia;#;Rp #</item>
+        <item>5;Mitra Asia;#;Rp #</item>
     </string-array>
 
     <string-array name="table_data_3">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
-        <item>1;Mitra Eropa;#</item>
-        <item>2;Mitra Eropa;#</item>
-        <item>3;Mitra Eropa;#</item>
-        <item>4;Mitra Eropa;#</item>
-        <item>5;Mitra Eropa;#</item>
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
+        <item>1;Mitra Eropa;#;Rp #</item>
+        <item>2;Mitra Eropa;#;Rp #</item>
+        <item>3;Mitra Eropa;#;Rp #</item>
+        <item>4;Mitra Eropa;#;Rp #</item>
+        <item>5;Mitra Eropa;#;Rp #</item>
     </string-array>
 
     <string-array name="table_data_4">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
-        <item>1;Mitra Afrika;#</item>
-        <item>2;Mitra Afrika;#</item>
-        <item>3;Mitra Afrika;#</item>
-        <item>4;Mitra Afrika;#</item>
-        <item>5;Mitra Afrika;#</item>
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
+        <item>1;Mitra Afrika;#;Rp #</item>
+        <item>2;Mitra Afrika;#;Rp #</item>
+        <item>3;Mitra Afrika;#;Rp #</item>
+        <item>4;Mitra Afrika;#;Rp #</item>
+        <item>5;Mitra Afrika;#;Rp #</item>
     </string-array>
 
     <string-array name="table_data_5">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
-        <item>1;Mitra Amerika;#</item>
-        <item>2;Mitra Amerika;#</item>
-        <item>3;Mitra Amerika;#</item>
-        <item>4;Mitra Amerika;#</item>
-        <item>5;Mitra Amerika;#</item>
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
+        <item>1;Mitra Amerika;#;Rp #</item>
+        <item>2;Mitra Amerika;#;Rp #</item>
+        <item>3;Mitra Amerika;#;Rp #</item>
+        <item>4;Mitra Amerika;#;Rp #</item>
+        <item>5;Mitra Amerika;#;Rp #</item>
     </string-array>
 
     <string-array name="table_data_6">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
-        <item>1;Mitra Australia;#</item>
-        <item>2;Mitra Australia;#</item>
-        <item>3;Mitra Australia;#</item>
-        <item>4;Mitra Australia;#</item>
-        <item>5;Mitra Australia;#</item>
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
+        <item>1;Mitra Australia;#;Rp #</item>
+        <item>2;Mitra Australia;#;Rp #</item>
+        <item>3;Mitra Australia;#;Rp #</item>
+        <item>4;Mitra Australia;#;Rp #</item>
+        <item>5;Mitra Australia;#;Rp #</item>
     </string-array>
 
     <string-array name="table_data_7">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai</item>
-        <item>1;Mitra Dalam Negeri;#</item>
-        <item>2;Mitra Dalam Negeri;#</item>
-        <item>3;Mitra Dalam Negeri;#</item>
-        <item>4;Mitra Dalam Negeri;#</item>
-        <item>5;Mitra Dalam Negeri;#</item>
+        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
+        <item>1;Mitra Dalam Negeri;#;Rp #</item>
+        <item>2;Mitra Dalam Negeri;#;Rp #</item>
+        <item>3;Mitra Dalam Negeri;#;Rp #</item>
+        <item>4;Mitra Dalam Negeri;#;Rp #</item>
+        <item>5;Mitra Dalam Negeri;#;Rp #</item>
     </string-array>
 
     <!--  FRAGMENT GRAFIK  -->
