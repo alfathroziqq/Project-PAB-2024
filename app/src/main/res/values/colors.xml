@@ -10,4 +10,5 @@
     <color name="purple">#9867EC</color>
     <color name="button_outline">#A8DADB</color>
     <color name="button_outline2">#F98D8D</color>
+    <color name="search_outline">#878787</color>
 </resources>
