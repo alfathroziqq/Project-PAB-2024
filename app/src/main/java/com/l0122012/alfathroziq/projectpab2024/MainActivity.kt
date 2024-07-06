@@ -1,5 +1,7 @@
 package com.l0122012.alfathroziq.projectpab2024
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
@@ -32,14 +34,18 @@ class MainActivity : AppCompatActivity() {
         binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
 
-        binding.appBarMain.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null)
-                .setAnchorView(R.id.fab).show()
+        binding.appBarMain.fab.setOnClickListener {
+            val intent = Intent(Intent.ACTION_SEND).apply {
+                type = "text/plain"
+                putExtra(Intent.EXTRA_SUBJECT, "Saran dan Tanggapan")
+                putExtra(Intent.EXTRA_EMAIL, arrayOf("campus@mail.uns.ac.id"))
+                putExtra(
+                    Intent.EXTRA_TEXT, """Saran dan Tanggapan"""
+                )
+            }
+            startActivity(Intent.createChooser(intent, "Share via..."))
         }
 
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_home, R.id.nav_prosedur, R.id.nav_daftarkerjasama, R.id.nav_grafik, R.id.nav_profile
@@ -49,13 +55,11 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         binding.navView.setupWithNavController(navController)
 
-        // Bottom Navigation Setup
         val bottomNavView: BottomNavigationView = findViewById(R.id.bottom_nav_view)
         bottomNavView.setupWithNavController(navController)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main, menu)
         return true
     }

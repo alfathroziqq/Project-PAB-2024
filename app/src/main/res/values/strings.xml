@@ -128,62 +128,23 @@
     </string-array>
 
     <!--  FRAGMENT GRAFIK  -->
-    <string name="tab_text_1">Keungan Kerjasama</string>
+    <string name="tab_text_1">Keuangan Kerjasama</string>
     <string name="tab_text_2">Jumlah Kerjasama</string>
     <string name="content_tab_text">This is Tab %1$d</string>
     <string name="title_grafikkiri">Keuangan Kerjasama Tahun ke Tahun</string>
     <string name="title_grafikkanan">Jumlah Kerjasama Tahun ke Tahun</string>
-    
+
     <string name="menu_home">Home</string>
     <string name="menu_daftar">Daftar Kerjasama</string>
     <string name="menu_prosedur">Prosedur</string>
     <string name="menu_grafik">Grafik</string>
     <string name="menu_profile">Profile</string>
-    <string name="button_to_any">Pencet aja</string>
-    
+
     <string name="year">Tahun</string>
     <string name="money">Jumlah Uang</string>
     <string name="cate">Category</string>
 
     <!--  Keuangan  -->
-    <string-array name="data_year">
-        <item>Tahun 2015</item>
-        <item>Tahun 2016</item>
-        <item>Tahun 2017</item>
-        <item>Tahun 2018</item>
-        <item>Tahun 2019</item>
-        <item>Tahun 2020</item>
-        <item>Tahun 2021</item>
-        <item>Tahun 2022</item>
-        <item>Tahun 2023</item>
-        <item>Tahun 2024</item>
-    </string-array>
-    
-    <string-array name="data_money">
-        <item>1000000</item>
-        <item>900000</item>
-        <item>750000</item>
-        <item>1400000</item>
-        <item>1600000</item>
-        <item>500000</item>
-        <item>400000</item>
-        <item>1200000</item>
-        <item>1500000</item>
-        <item>1200000</item>
-    </string-array>
-    
-    <string-array name="data_cate">
-        <item>High</item>
-        <item>High</item>
-        <item>Medium</item>
-        <item>High</item>
-        <item>High</item>
-        <item>Medium</item>
-        <item>Low</item>
-        <item>High</item>
-        <item>High</item>
-        <item>High</item>
-    </string-array>
 
     <!--  Perusahaan  -->
     <string-array name="data_yearperu">
@@ -212,7 +173,7 @@
         <item>Perusahaan Gatau</item>
     </string-array>
 
-    <string-array name="data_moneyperu">
+    <string-array name="data_description">
         <item>1000000</item>
         <item>900000</item>
         <item>750000</item>

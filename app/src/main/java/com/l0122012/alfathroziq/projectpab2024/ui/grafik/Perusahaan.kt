@@ -7,5 +7,5 @@ import kotlinx.parcelize.Parcelize
 data class Perusahaan(
     val year: String,
     val company: String,
-    val money: Int
+    val description: String
 ) : Parcelable

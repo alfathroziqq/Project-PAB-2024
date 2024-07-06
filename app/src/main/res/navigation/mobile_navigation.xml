@@ -150,15 +150,6 @@
         app:destination="@id/detailPerusahaanKiriFragment" />
 
     <fragment
-        android:id="@+id/detailKeuanganKananFragment"
-        android:name="com.l0122012.alfathroziq.projectpab2024.ui.grafik.DetailKeuanganKanan"
-        android:label="Detail Perusahaan"
-        tools:layout="@layout/fragment_detail_keuangan_kanan" />
-    <action
-        android:id="@+id/action_grafikKananFragment_to_detailKeuanganKananFragment"
-        app:destination="@id/detailKeuanganKananFragment" />
-
-    <fragment
         android:id="@+id/detailPerusahaanKananFragment"
         android:name="com.l0122012.alfathroziq.projectpab2024.ui.grafik.DetailPerusahaanKanan"
         android:label="Detail Perusahaan"
@@ -166,9 +157,27 @@
     <action
         android:id="@+id/action_grafikKananFragment_to_detailPerusahaanKananFragment"
         app:destination="@id/detailPerusahaanKananFragment" />
+    <action
+        android:id="@+id/action_detailPerusahaanKanan_to_detailRinciFragment"
+        app:destination="@id/detailRinciFragment">
+        <argument
+            android:name="year"
+            app:argType="string" />
+        <argument
+            android:name="company"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+    </action>
+
+    <fragment
+        android:id="@+id/detailRinciFragment"
+        android:name="com.l0122012.alfathroziq.projectpab2024.ui.grafik.DetailRinciFragment"
+        android:label="DetailRinciFragment"
+        tools:layout="@layout/fragment_detail_rinci" />
 
     <!--  PROFILE  -->
-
     <fragment
         android:id="@+id/nav_profile"
         android:name="com.l0122012.alfathroziq.projectpab2024.ui.profile.ProfileFragment"

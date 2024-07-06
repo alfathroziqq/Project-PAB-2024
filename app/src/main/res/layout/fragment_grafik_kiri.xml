@@ -24,7 +24,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:background="@drawable/border_graphic">
 
             <com.github.mikephil.charting.charts.BarChart
                 android:id="@+id/bar_chart"
@@ -39,7 +40,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_graphic"
+            android:padding="8dp">
 
             <com.github.mikephil.charting.charts.PieChart
                 android:id="@+id/pie_chart"

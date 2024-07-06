@@ -7,24 +7,24 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.l0122012.alfathroziq.projectpab2024.R
 
-class ListKeuanganAdapter(private val listKeuangan: ArrayList<Keuangan>) : RecyclerView.Adapter<ListKeuanganAdapter.ListViewHolder>() {
+class ListPerusahaanKiriAdapter(private val listPerusahaanKiri: ArrayList<PerusahaanKiri>) : RecyclerView.Adapter<ListPerusahaanKiriAdapter.ListViewHolder>() {
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val tvYear: TextView = itemView.findViewById(R.id.tv_item_year)
+        val tvYear: TextView = itemView.findViewById(R.id.tv_item_yearperukiri)
+        val tvCompany: TextView = itemView.findViewById(R.id.tv_item_company)
         val tvMoney: TextView = itemView.findViewById(R.id.tv_item_money)
-        val tvCate: TextView = itemView.findViewById(R.id.tv_item_cate)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_keuangan, parent, false)
+        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_perusahaan_kiri, parent, false)
         return ListViewHolder(view)
     }
 
-    override fun getItemCount(): Int = listKeuangan.size
+    override fun getItemCount(): Int = listPerusahaanKiri.size
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (year, money, cate) = listKeuangan[position]
+        val (year, company, money) = listPerusahaanKiri[position]
         holder.tvYear.text = year
+        holder.tvCompany.text = company
         holder.tvMoney.text = money
-        holder.tvCate.text = cate
     }
 }

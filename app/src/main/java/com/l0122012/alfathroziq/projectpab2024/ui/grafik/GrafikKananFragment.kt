@@ -46,11 +46,6 @@ class GrafikKananFragment : Fragment() {
         setupBarChart()
         setupPieChart()
 
-        // Set up click listener for the button
-        binding.buttonkeuangankanan.setOnClickListener {
-            findNavController().navigate(R.id.action_grafikKananFragment_to_detailKeuanganKananFragment)
-        }
-
         binding.buttonperusahaankanan.setOnClickListener {
             findNavController().navigate(R.id.action_grafikKananFragment_to_detailPerusahaanKananFragment)
         }
@@ -58,16 +53,16 @@ class GrafikKananFragment : Fragment() {
 
     private fun setupBarChart() {
         val entries: ArrayList<BarEntry> = ArrayList()
-        entries.add(BarEntry(0f, 100f))
-        entries.add(BarEntry(1f, 92f))
-        entries.add(BarEntry(2f, 40f))
-        entries.add(BarEntry(3f, 120f))
-        entries.add(BarEntry(4f, 140f))
-        entries.add(BarEntry(5f, 20f))
-        entries.add(BarEntry(6f, 50f))
-        entries.add(BarEntry(7f, 200f))
-        entries.add(BarEntry(8f, 310f))
-        entries.add(BarEntry(9f, 100f))
+        entries.add(BarEntry(0f, 3f))
+        entries.add(BarEntry(1f, 2f))
+        entries.add(BarEntry(2f, 2f))
+        entries.add(BarEntry(3f, 3f))
+        entries.add(BarEntry(4f, 3f))
+        entries.add(BarEntry(5f, 1f))
+        entries.add(BarEntry(6f, 1f))
+        entries.add(BarEntry(7f, 2f))
+        entries.add(BarEntry(8f, 2f))
+        entries.add(BarEntry(9f, 2f))
 
         val barDataSet = BarDataSet(entries, "")
         barDataSet.colors = ColorTemplate.MATERIAL_COLORS.asList()
@@ -98,16 +93,16 @@ class GrafikKananFragment : Fragment() {
 
     private fun setupPieChart() {
         val entries: ArrayList<PieEntry> = ArrayList()
-        entries.add(PieEntry(100f, "2015"))
-        entries.add(PieEntry(92f, "2016"))
-        entries.add(PieEntry(40f, "2017"))
-        entries.add(PieEntry(120f, "2018"))
-        entries.add(PieEntry(140f, "2019"))
-        entries.add(PieEntry(20f, "2020"))
-        entries.add(PieEntry(50f, "2021"))
-        entries.add(PieEntry(200f, "2022"))
-        entries.add(PieEntry(310f, "2023"))
-        entries.add(PieEntry(100f, "2024"))
+        entries.add(PieEntry(3f, "2015"))
+        entries.add(PieEntry(2f, "2016"))
+        entries.add(PieEntry(2f, "2017"))
+        entries.add(PieEntry(3f, "2018"))
+        entries.add(PieEntry(3f, "2019"))
+        entries.add(PieEntry(1f, "2020"))
+        entries.add(PieEntry(1f, "2021"))
+        entries.add(PieEntry(2f, "2022"))
+        entries.add(PieEntry(2f, "2023"))
+        entries.add(PieEntry(2f, "2024"))
 
         val pieDataSet = PieDataSet(entries, "")
         pieDataSet.colors = ColorTemplate.MATERIAL_COLORS.asList()

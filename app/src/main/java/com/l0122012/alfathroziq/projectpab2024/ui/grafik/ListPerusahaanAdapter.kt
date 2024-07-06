@@ -7,24 +7,37 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.l0122012.alfathroziq.projectpab2024.R
 
-class ListPerusahaanAdapter(private val listPerusahaan: ArrayList<Perusahaan>) : RecyclerView.Adapter<ListPerusahaanAdapter.ListViewHolder>() {
-    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val tvYear: TextView = itemView.findViewById(R.id.tv_item_year)
+class ListPerusahaanAdapter(
+    private val list: ArrayList<Perusahaan>,
+    private val onItemClick: (Perusahaan) -> Unit
+) : RecyclerView.Adapter<ListPerusahaanAdapter.ViewHolder>() {
+
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvCompany: TextView = itemView.findViewById(R.id.tv_item_company)
-        val tvMoney: TextView = itemView.findViewById(R.id.tv_item_money)
+        val tvYear: TextView = itemView.findViewById(R.id.tv_item_year)
+        val tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
+
+        fun bind(perusahaan: Perusahaan) {
+            tvCompany.text = perusahaan.company
+            tvYear.text = perusahaan.year
+            tvDescription.text = perusahaan.description
+
+            itemView.setOnClickListener {
+                onItemClick(perusahaan)
+            }
+        }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_perusahaan, parent, false)
-        return ListViewHolder(view)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_row_perusahaan, parent, false)
+        return ViewHolder(view)
     }
 
-    override fun getItemCount(): Int = listPerusahaan.size
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bind(list[position])
+    }
 
-    override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (year, company, money) = listPerusahaan[position]
-        holder.tvYear.text = year
-        holder.tvCompany.text = company
-        holder.tvMoney.text = money.toString()
+    override fun getItemCount(): Int {
+        return list.size
     }
 }

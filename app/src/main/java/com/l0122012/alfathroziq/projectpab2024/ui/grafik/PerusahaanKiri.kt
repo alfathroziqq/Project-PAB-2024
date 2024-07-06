@@ -4,8 +4,8 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Keuangan(
+data class PerusahaanKiri(
     val year: String,
-    val money: String,
-    val cate: String
+    val company: String,
+    val money: String
 ) : Parcelable

@@ -11,4 +11,7 @@
     <color name="button_outline">#A8DADB</color>
     <color name="button_outline2">#F98D8D</color>
     <color name="search_outline">#878787</color>
+    <color name="honey">#f0fff0</color>
+    <color name="grey">#d3d3d3</color>
+    <color name="blue">#a4a4eb</color>
 </resources>

@@ -24,7 +24,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:background="@drawable/border_graphic">
 
             <com.github.mikephil.charting.charts.BarChart
                 android:id="@+id/bar_chartjumlah"
@@ -39,7 +40,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_graphic"
+            android:padding="8dp">
 
             <com.github.mikephil.charting.charts.PieChart
                 android:id="@+id/pie_chartjumlah"
@@ -56,26 +59,16 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
             android:layout_marginBottom="60dp">
 
             <Button
-                android:id="@+id/buttonkeuangankanan"
-                android:layout_width="0dp"
-                android:layout_height="130dp"
-                android:layout_marginEnd="10dp"
-                android:layout_weight="1"
-                android:paddingTop="15dp"
-                android:drawableTop="@drawable/salary"
-                android:text="Detail Keuangan"/>
-
-            <Button
                 android:id="@+id/buttonperusahaankanan"
-                android:layout_width="0dp"
+                android:layout_width="200dp"
                 android:layout_height="130dp"
                 android:layout_marginStart="10dp"
                 android:paddingTop="15dp"
                 android:drawableTop="@drawable/enterprise"
-                android:layout_weight="1"
                 android:text="Detail Kerjasama"/>
         </LinearLayout>
 
