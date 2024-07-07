@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundall"
+    android:background="@drawable/background15"
     tools:context=".ui.prosedur.ProsedurFragment">
 
     <LinearLayout
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:textAlignment="center"
-            android:textColor="@color/purple"
+            android:textColor="@android:color/holo_blue_dark"
             android:fontFamily="@font/koho"
             android:textSize="17sp"
             android:text="@string/unduh_document"/>

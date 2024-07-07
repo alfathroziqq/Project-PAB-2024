@@ -72,7 +72,8 @@ class ProsedurFragment : Fragment() {
                     ProcedureItem(
                         number = document.getLong("number")?.toInt() ?: 0,
                         title = document.getString("title") ?: "",
-                        content = document.getString("content") ?: ""
+                        content = document.getString("content") ?: "",
+                        link = document.getString("link")
                     )
                 }
 
