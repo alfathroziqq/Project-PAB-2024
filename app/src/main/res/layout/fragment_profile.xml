@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="18dp"
+            android:layout_marginTop="18dp"
             android:fontFamily="@font/koho"
             android:textSize="29sp"
             android:textStyle="bold"
@@ -27,22 +27,14 @@
             android:textAlignment="center"
             android:text="@string/headerProfile" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="225dp"
             android:layout_height="140dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp"
-            app:cardCornerRadius="15dp">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp"
-                android:contentDescription="@string/descProfile"
-                android:src="@drawable/logouns" />
-        </androidx.cardview.widget.CardView>
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="5dp"
+            android:contentDescription="@string/descProfile"
+            android:src="@drawable/logouns" />
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtube_player_view"

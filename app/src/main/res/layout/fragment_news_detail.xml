@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundall">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/news_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:fontFamily="@font/koho"
+            android:textStyle="bold"
+            android:textColor="?colorOnBackground"
+            android:justificationMode="inter_word"
+            android:paddingBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/news_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/news_image"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/news_detail_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="110dp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/koho"
+            android:textColor="?colorOnBackground"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</ScrollView>

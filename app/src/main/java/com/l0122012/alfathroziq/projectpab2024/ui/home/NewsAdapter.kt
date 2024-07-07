@@ -7,7 +7,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.l0122012.alfathroziq.projectpab2024.R
-
 class NewsAdapter(private val newsList: List<News>, private val onClick: (News) -> Unit) :
     RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 

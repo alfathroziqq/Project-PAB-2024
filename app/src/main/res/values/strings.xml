@@ -12,7 +12,9 @@
     <string name="title_home">Kerjasama</string>
     <string name="description_home">Home Photo</string>
     <string name="description_indexhome">Kami menyediakan rekapitulasi perjanjian dengan rincian tujuan, pencapaian, dan dampak positifnya. Melalui portal ini, Anda dapat mengakses informasi mendalam tentang kerjasama kami, kontribusinya terhadap pertumbuhan dan inovasi, serta peluang kolaborasi di masa depan.</string>
+    <string name="berita_terkini">Berita Terkini</string>
     <string name="judul_news1">Judul News</string>
+    <string name="news_image">news image</string>
     <integer-array name="photo_news">
         <item>@drawable/news_image1</item>
         <item>@drawable/news_image2</item>

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.l0122012.alfathroziq.projectpab2024.R
 import com.l0122012.alfathroziq.projectpab2024.databinding.FragmentHomeBinding
@@ -22,7 +23,6 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
         setupRecyclerView()
-
         return binding.root
     }
 
@@ -49,10 +49,10 @@ class HomeFragment : Fragment() {
         newsImages.recycle()
 
         binding.newsRecyclerView.apply {
-            layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+            layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
             adapter = NewsAdapter(newsList) { newsItem ->
-                // Handle news item click, navigate to news detail fragment
-                // Example: findNavController().navigate(R.id.action_homeFragment_to_newsDetailFragment)
+                val action = HomeFragmentDirections.actionHomeFragmentToNewsDetailFragment(newsItem)
+                findNavController().navigate(action)
             }
         }
     }
