@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.navArgs
 import com.l0122012.alfathroziq.projectpab2024.databinding.FragmentNewsDetailBinding
 
@@ -30,6 +31,9 @@ class NewsDetailFragment : Fragment() {
         binding.newsDetailTitle.text = newsItem?.title
         newsItem?.imageResId?.let { binding.newsDetailImage.setImageResource(it) }
         binding.newsDetailText.text = newsItem?.detail
+
+        (activity as? AppCompatActivity)?.supportActionBar?.title = "Detail Berita"
+
     }
 
     override fun onDestroyView() {
