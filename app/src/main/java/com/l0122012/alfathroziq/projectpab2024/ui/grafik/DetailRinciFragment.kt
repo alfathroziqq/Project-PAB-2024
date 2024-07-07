@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
+import androidx.appcompat.app.AppCompatActivity
 import com.l0122012.alfathroziq.projectpab2024.databinding.FragmentDetailRinciBinding
 
 class DetailRinciFragment : Fragment() {
@@ -23,6 +23,8 @@ class DetailRinciFragment : Fragment() {
             company = it.getString("company")
             description = it.getString("description")
         }
+
+        (activity as? AppCompatActivity)?.supportActionBar?.title = "Detail Kerjasama"
     }
 
     override fun onCreateView(
