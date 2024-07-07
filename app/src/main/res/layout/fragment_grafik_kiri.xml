@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:fontFamily="@font/andada"
+            android:fontFamily="@font/koho"
             android:text="@string/title_grafikkiri"
             android:textColor="@color/black"
             android:textSize="29sp"
