@@ -65,16 +65,19 @@
     <string name="unduh_template">unduh template</string>
 
     <!--  FRAGMENT DAFTAR KERJASAMA  -->
-    <string name="header_data_1">Kerjasama ASEAN</string>
+    <string name="kerjasama_no">No</string>
+    <string name="kerjasama_mitra">Nama Mitra</string>
+    <string name="kerjasama_tanggal">Tanggal Mulai - Selesai</string>
+    <string name="kerjasama_nominal">Nominal</string>
 
-    <string-array name="table_data_2">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
-        <item>1;Mitra Asia;#;Rp #</item>
-        <item>2;Mitra Asia;#;Rp #</item>
-        <item>3;Mitra Asia;#;Rp #</item>
-        <item>4;Mitra Asia;#;Rp #</item>
-        <item>5;Mitra Asia;#;Rp #</item>
-    </string-array>
+    <string name="kerjasama_header">Daftar Kerjasama</string>
+    <string name="kerjasama_asean">Kerjasama ASEAN</string>
+    <string name="kerjasama_asia">Kerjasama ASIA</string>
+    <string name="kerjasama_eropa">Kerjasama EROPA</string>
+    <string name="kerjasama_afrika">Kerjasama AFRIKA</string>
+    <string name="kerjasama_amerika">Kerjasama AMERIKA</string>
+    <string name="kerjasama_australia">Kerjasama AUSTRALIA</string>
+    <string name="kerjasama_dalam_negeri">Kerjasama DALAM NEGERI</string>
 
     <string-array name="table_data_3">
         <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>

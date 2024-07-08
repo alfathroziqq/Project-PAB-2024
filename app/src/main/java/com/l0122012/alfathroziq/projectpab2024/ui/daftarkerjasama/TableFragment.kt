@@ -68,18 +68,14 @@ class TableFragment : Fragment() {
                     val nominal = document.getString("Nominal") ?: ""
                     data.add(arrayOf(nomor, namaKerjasama, tanggal, nominal))
                 }
-                adapter.setData(data) // Panggil metode baru untuk mengatur data dan memfilter seluruh data
+                adapter.setData(data)
                 adapter.notifyDataSetChanged()
 
-                // Set header text
                 val headerView = binding.headerContainer.getChildAt(0)
-                headerView.findViewById<TextView>(R.id.textHeader1).text = "No"
-                headerView.findViewById<TextView>(R.id.textHeader2).text = "Nama Mitra"
-                headerView.findViewById<TextView>(R.id.textHeader3).text = "Tanggal Mulai - Selesai"
-                headerView.findViewById<TextView>(R.id.textHeader4).text = "Nominal"
-            }
-            .addOnFailureListener { exception ->
-                // Handle any errors
+                headerView.findViewById<TextView>(R.id.textHeader1).text
+                headerView.findViewById<TextView>(R.id.textHeader2).text
+                headerView.findViewById<TextView>(R.id.textHeader3).text
+                headerView.findViewById<TextView>(R.id.textHeader4).text
             }
     }
 }

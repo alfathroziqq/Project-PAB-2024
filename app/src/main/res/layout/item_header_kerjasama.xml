@@ -16,7 +16,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/kerjasama_no"/>
 
     <TextView
         android:id="@+id/textHeader2"
@@ -29,7 +30,8 @@
         app:layout_constraintEnd_toStartOf="@id/textHeader3"
         app:layout_constraintHorizontal_weight="3"
         app:layout_constraintStart_toEndOf="@id/textHeader1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/kerjasama_mitra"/>
 
     <TextView
         android:id="@+id/textHeader3"
@@ -43,7 +45,8 @@
         app:layout_constraintEnd_toEndOf="@id/textHeader4"
         app:layout_constraintHorizontal_weight="2"
         app:layout_constraintStart_toEndOf="@id/textHeader2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/kerjasama_tanggal"/>
 
     <TextView
         android:id="@+id/textHeader4"
@@ -57,6 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="2"
         app:layout_constraintStart_toEndOf="@id/textHeader3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/kerjasama_nominal"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
