@@ -32,4 +32,3 @@ class DaftarFragment : Fragment() {
         findNavController().navigate(action)
     }
 }
-

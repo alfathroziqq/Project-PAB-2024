@@ -1,6 +1,5 @@
 package com.l0122012.alfathroziq.projectpab2024.ui.daftarkerjasama
 
-import android.graphics.Typeface
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.l0122012.alfathroziq.projectpab2024.R
 
-class TableAdapter(private val data: List<Array<String>>) : RecyclerView.Adapter<TableAdapter.TableViewHolder>() {
+class TableAdapter(private var data: List<Array<String>>) : RecyclerView.Adapter<TableAdapter.TableViewHolder>() {
 
     private var filteredData = data.toMutableList()
 
@@ -43,6 +42,12 @@ class TableAdapter(private val data: List<Array<String>>) : RecyclerView.Adapter
             }
             filteredList.toMutableList()
         }
+        notifyDataSetChanged()
+    }
+
+    fun setData(newData: List<Array<String>>) {
+        data = newData
+        filteredData = newData.toMutableList()
         notifyDataSetChanged()
     }
 }

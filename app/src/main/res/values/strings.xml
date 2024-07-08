@@ -67,15 +67,6 @@
     <!--  FRAGMENT DAFTAR KERJASAMA  -->
     <string name="header_data_1">Kerjasama ASEAN</string>
 
-    <string-array name="table_data_1">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
-        <item>1;Mitra ASEAN;#;Rp #</item>
-        <item>2;Mitra ASEAN Kerjasama dengan UNS;#;Rp #</item>
-        <item>3;Mitra UNS;#;Rp #</item>
-        <item>4;Mitra ASEAN;#;Rp #</item>
-        <item>5;Mitra ASEAN Kerjasama;#;Rp #</item>
-    </string-array>
-
     <string-array name="table_data_2">
         <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
         <item>1;Mitra Asia;#;Rp #</item>

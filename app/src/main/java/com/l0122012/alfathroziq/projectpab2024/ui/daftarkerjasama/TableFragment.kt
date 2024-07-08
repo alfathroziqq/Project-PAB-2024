@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.appcompat.widget.SearchView
+import com.google.firebase.firestore.FirebaseFirestore
 import com.l0122012.alfathroziq.projectpab2024.R
 import com.l0122012.alfathroziq.projectpab2024.databinding.FragmentTableBinding
 
@@ -15,7 +16,8 @@ class TableFragment : Fragment() {
 
     private lateinit var binding: FragmentTableBinding
     private lateinit var adapter: TableAdapter
-    private lateinit var data: List<Array<String>>
+    private val data = mutableListOf<Array<String>>()
+    private lateinit var tableName: String
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,13 +28,10 @@ class TableFragment : Fragment() {
 
         // Ambil argument tableName dari bundle
         val args = TableFragmentArgs.fromBundle(requireArguments())
-        val tableName = args.tableName
+        tableName = args.tableName
 
-        val tableId = resources.getIdentifier(tableName, "array", requireActivity().packageName)
-        val tableData = resources.getStringArray(tableId)
-        data = tableData.map { it.split(";").toTypedArray() }
-
-        adapter = TableAdapter(data.drop(1)) // Drop header row from data
+        // Setup RecyclerView
+        adapter = TableAdapter(data)
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerView.adapter = adapter
 
@@ -40,13 +39,7 @@ class TableFragment : Fragment() {
         val headerView = inflater.inflate(R.layout.item_header_kerjasama, binding.headerContainer, false)
         binding.headerContainer.addView(headerView)
 
-        // Set header text
-        val headerRow = data[0]
-        headerView.findViewById<TextView>(R.id.textHeader1).text = headerRow[0]
-        headerView.findViewById<TextView>(R.id.textHeader2).text = headerRow[1]
-        headerView.findViewById<TextView>(R.id.textHeader3).text = headerRow[2]
-        headerView.findViewById<TextView>(R.id.textHeader4).text = headerRow[3]
-
+        // Set up search functionality
         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 binding.searchView.clearFocus()
@@ -61,6 +54,37 @@ class TableFragment : Fragment() {
             }
         })
 
+        // Fetch data from Firestore
+        fetchTableData()
+
         return view
+    }
+
+    private fun fetchTableData() {
+        val db = FirebaseFirestore.getInstance()
+        db.collection("kerjasama").document("daftar").collection(tableName)
+            .get()
+            .addOnSuccessListener { result ->
+                data.clear()
+                for (document in result) {
+                    val nomor = document.getString("No") ?: ""
+                    val namaKerjasama = document.getString("Nama Mitra") ?: ""
+                    val tanggal = document.getString("Tanggal Mulai - Selesai") ?: ""
+                    val nominal = document.getString("Nominal") ?: ""
+                    data.add(arrayOf(nomor, namaKerjasama, tanggal, nominal))
+                }
+                adapter.setData(data) // Panggil metode baru untuk mengatur data dan memfilter seluruh data
+                adapter.notifyDataSetChanged()
+
+                // Set header text
+                val headerView = binding.headerContainer.getChildAt(0)
+                headerView.findViewById<TextView>(R.id.textHeader1).text = "No"
+                headerView.findViewById<TextView>(R.id.textHeader2).text = "Nama Mitra"
+                headerView.findViewById<TextView>(R.id.textHeader3).text = "Tanggal Mulai - Selesai"
+                headerView.findViewById<TextView>(R.id.textHeader4).text = "Nominal"
+            }
+            .addOnFailureListener { exception ->
+                // Handle any errors
+            }
     }
 }
