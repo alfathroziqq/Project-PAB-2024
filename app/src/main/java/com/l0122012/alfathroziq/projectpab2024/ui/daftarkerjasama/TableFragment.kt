@@ -26,20 +26,16 @@ class TableFragment : Fragment() {
         binding = FragmentTableBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        // Ambil argument tableName dari bundle
         val args = TableFragmentArgs.fromBundle(requireArguments())
         tableName = args.tableName
 
-        // Setup RecyclerView
         adapter = TableAdapter(data)
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerView.adapter = adapter
 
-        // Inflate header and add to layout
         val headerView = inflater.inflate(R.layout.item_header_kerjasama, binding.headerContainer, false)
         binding.headerContainer.addView(headerView)
 
-        // Set up search functionality
         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 binding.searchView.clearFocus()
@@ -54,7 +50,6 @@ class TableFragment : Fragment() {
             }
         })
 
-        // Fetch data from Firestore
         fetchTableData()
 
         return view
