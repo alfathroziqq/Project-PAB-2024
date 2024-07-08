@@ -79,51 +79,6 @@
     <string name="kerjasama_australia">Kerjasama AUSTRALIA</string>
     <string name="kerjasama_dalam_negeri">Kerjasama DALAM NEGERI</string>
 
-    <string-array name="table_data_3">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
-        <item>1;Mitra Eropa;#;Rp #</item>
-        <item>2;Mitra Eropa;#;Rp #</item>
-        <item>3;Mitra Eropa;#;Rp #</item>
-        <item>4;Mitra Eropa;#;Rp #</item>
-        <item>5;Mitra Eropa;#;Rp #</item>
-    </string-array>
-
-    <string-array name="table_data_4">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
-        <item>1;Mitra Afrika;#;Rp #</item>
-        <item>2;Mitra Afrika;#;Rp #</item>
-        <item>3;Mitra Afrika;#;Rp #</item>
-        <item>4;Mitra Afrika;#;Rp #</item>
-        <item>5;Mitra Afrika;#;Rp #</item>
-    </string-array>
-
-    <string-array name="table_data_5">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
-        <item>1;Mitra Amerika;#;Rp #</item>
-        <item>2;Mitra Amerika;#;Rp #</item>
-        <item>3;Mitra Amerika;#;Rp #</item>
-        <item>4;Mitra Amerika;#;Rp #</item>
-        <item>5;Mitra Amerika;#;Rp #</item>
-    </string-array>
-
-    <string-array name="table_data_6">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
-        <item>1;Mitra Australia;#;Rp #</item>
-        <item>2;Mitra Australia;#;Rp #</item>
-        <item>3;Mitra Australia;#;Rp #</item>
-        <item>4;Mitra Australia;#;Rp #</item>
-        <item>5;Mitra Australia;#;Rp #</item>
-    </string-array>
-
-    <string-array name="table_data_7">
-        <item>No.;Nama Mitra;Tanggal Mulai - Selesai;Nominal</item>
-        <item>1;Mitra Dalam Negeri;#;Rp #</item>
-        <item>2;Mitra Dalam Negeri;#;Rp #</item>
-        <item>3;Mitra Dalam Negeri;#;Rp #</item>
-        <item>4;Mitra Dalam Negeri;#;Rp #</item>
-        <item>5;Mitra Dalam Negeri;#;Rp #</item>
-    </string-array>
-
     <!--  FRAGMENT GRAFIK  -->
     <string name="tab_text_1">Keuangan Kerjasama</string>
     <string name="tab_text_2">Jumlah Kerjasama</string>
